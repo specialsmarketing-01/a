@@ -41,7 +41,6 @@ export function HeaderNavClient() {
   }, []);
 
   const menuChildActive = MENU_SUBPAGE_ITEMS.some((i) => i.href === pathname);
-  const hideMenuChefKontaktOnHome = pathname === "/";
 
   return (
     <ul className="ak-nav_list">
@@ -55,40 +54,36 @@ export function HeaderNavClient() {
           Über uns
         </Link>
       </li>
-      {!hideMenuChefKontaktOnHome ? (
-        <li
-          ref={liRef}
-          className={`menu-item-has-children nav-submenu-managed${submenuOpen ? " nav-submenu-open" : ""}${
-            menuChildActive ? " current-menu-item" : ""
-          }`}
-        >
-          <Link href="/speisekarte" data-key="nav_menu">
-            Speisekarte
-          </Link>
-          <button
-            type="button"
-            className="nav-submenu-toggle"
-            aria-expanded={submenuOpen}
-            aria-haspopup="true"
-            aria-label="Speisekarte Untermenü"
-            onClick={toggleSubmenu}
-          />
-          <ul>
-            {MENU_SUBPAGE_ITEMS.map((item) => (
-              <li key={item.href}>
-                <Link href={item.href}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ) : null}
-      {!hideMenuChefKontaktOnHome ? (
-        <li>
-          <Link href="/meet-the-chef" data-key="nav_chef">
-            CHEF
-          </Link>
-        </li>
-      ) : null}
+      <li
+        ref={liRef}
+        className={`menu-item-has-children nav-submenu-managed${submenuOpen ? " nav-submenu-open" : ""}${
+          menuChildActive ? " current-menu-item" : ""
+        }`}
+      >
+        <Link href="/speisekarte" data-key="nav_menu">
+          Speisekarte
+        </Link>
+        <button
+          type="button"
+          className="nav-submenu-toggle"
+          aria-expanded={submenuOpen}
+          aria-haspopup="true"
+          aria-label="Speisekarte Untermenü"
+          onClick={toggleSubmenu}
+        />
+        <ul>
+          {MENU_SUBPAGE_ITEMS.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href}>{item.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </li>
+      <li>
+        <Link href="/meet-the-chef" data-key="nav_chef">
+          CHEF
+        </Link>
+      </li>
       <li>
         <Link href="/portfolio" data-key="nav_portfolio">
           Portfolio
@@ -109,13 +104,11 @@ export function HeaderNavClient() {
           Galerie
         </Link>
       </li>
-      {!hideMenuChefKontaktOnHome ? (
-        <li>
-          <Link href="/contact" data-key="nav_contact">
-            Kontakt
-          </Link>
-        </li>
-      ) : null}
+      <li>
+        <Link href="/contact" data-key="nav_contact">
+          Kontakt
+        </Link>
+      </li>
       <li className="lang-switcher">
         <button type="button" data-lang="de">
           DE

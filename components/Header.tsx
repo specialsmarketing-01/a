@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HeaderNavClient } from "@/components/HeaderNavClient";
-import { HeaderTopMainMenu } from "@/components/HeaderTopMainMenu";
 
 /** Extracted from `index.html` — structure and classes unchanged; internal routes use `Link`. */
 export function Header() {
@@ -33,7 +32,63 @@ export function Header() {
               <path d="M30,12 L2,12" className="bar-3"></path>
             </svg>
           </button>
-          <HeaderTopMainMenu />
+          <ul className="top-main-menu">
+            <li className="top-main-menu-li">
+              <Link href="/">Startseite</Link>
+              <Image
+                className="top-main-menu-img"
+                src="/assets/img/fullWM_1.jpg"
+                alt=""
+                width={1920}
+                height={1080}
+                sizes="400px"
+              />
+            </li>
+            <li className="top-main-menu-li">
+              <Link href="/about">Über uns</Link>
+              <Image
+                className="top-main-menu-img"
+                src="/assets/img/fullWM_about.jpg"
+                alt=""
+                width={1920}
+                height={1080}
+                sizes="400px"
+              />
+            </li>
+            <li className="top-main-menu-li">
+              <Link href="/speisekarte">Speisekarte</Link>
+              <Image
+                className="top-main-menu-img menu-img"
+                src="/assets/img/fullWM_menu.jpg"
+                alt=""
+                width={1920}
+                height={1080}
+                sizes="400px"
+              />
+            </li>
+            <li className="top-main-menu-li">
+              <Link href="/meet-the-chef">CHEF</Link>
+              <Image
+                className="top-main-menu-img"
+                src="/assets/img/fullWM_chef.jpg"
+                alt=""
+                width={1920}
+                height={1080}
+                sizes="400px"
+              />
+            </li>
+            <li className="top-main-menu-li">
+              <Link href="/contact">Kontakt</Link>
+              <Image
+                className="top-main-menu-img"
+                src="/assets/img/fullWM_contact.jpg"
+                alt=""
+                width={1920}
+                height={1080}
+                sizes="400px"
+              />
+            </li>
+          </ul>
         </div>
       </div>
       <div className="nav-bar-border"></div>
