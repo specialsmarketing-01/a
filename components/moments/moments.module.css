@@ -1,0 +1,126 @@
+.root {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.titleTop {
+  margin: 0;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.titleBottom {
+  margin: 0.3rem 0 1.25rem;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #ffd28d;
+}
+
+.subtitle {
+  margin: 0 0 3.25rem;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.courseBlock {
+  margin: 0 0 3.35rem;
+}
+
+.courseHeading {
+  margin: 0 0 1rem;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.courseNumber {
+  display: inline-block;
+  color: #ffd28d;
+  font-size: 1.08em;
+  margin-right: 0.2rem;
+}
+
+.courseBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.courseLine {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 300;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.oder {
+  margin: 1.25rem auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #ffd28d;
+}
+
+.footer {
+  margin-top: 4.25rem;
+  padding-top: 0.5rem;
+}
+
+.footerLead {
+  margin: 0;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: rgba(255, 210, 141, 0.92);
+}
+
+.footerLead + .footerLead {
+  margin-top: 0.15rem;
+}
+
+.footerLine {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.footerLine:first-of-type {
+  margin-top: 2rem;
+}
+
+.footerLink {
+  color: rgba(255, 210, 141, 0.75);
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #ffd28d;
+}

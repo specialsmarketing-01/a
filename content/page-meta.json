@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "Hari1090 Indisches Restaurant Wien | Fine Dining & Catering",
+    "source": "index.html"
+  },
+  "about": {
+    "title": "Über uns | Hari1090 by Kumar's Kitchen – Wien",
+    "source": "about.html"
+  },
+  "contact": {
+    "title": "Elegencia - Royale Restaurant HTML Template",
+    "source": "contact.html"
+  },
+  "menu": {
+    "title": "Elegencia - Royale Restaurant HTML Template",
+    "source": "menu.html"
+  },
+  "meet-the-chef": {
+    "title": "Chef & Geschichte | Hari1090 by Kumar's Kitchen – Wien",
+    "source": "meet-the-chef.html"
+  },
+  "portfolio": {
+    "title": "Elegencia - Royale Restaurant HTML Template",
+    "source": "portfolio.html"
+  },
+  "catering": {
+    "title": "Catering Wien | Hari1090 – Event- & Firmen-Catering",
+    "source": "catering.html"
+  },
+  "blog": {
+    "title": "Elegencia - Royale Restaurant HTML Template",
+    "source": "blog.html"
+  },
+  "gallery": {
+    "title": "Elegencia - Royale Restaurant HTML Template",
+    "source": "gallery.html"
+  },
+  "reservations": {
+    "title": "Elegencia - Royale Restaurant HTML Template",
+    "source": "reservations.html"
+  }
+}

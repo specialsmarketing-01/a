@@ -1,0 +1,157 @@
+.wrap {
+  --gk-accent: #f37021;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageTitle {
+  text-align: center;
+  margin: 0 0 2.75rem;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gk-accent, #f37021);
+  line-height: 1.25;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid rgba(243, 112, 33, 0.18);
+}
+
+.section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sectionIcon {
+  font-size: 1.35rem;
+  line-height: 1;
+  opacity: 0.92;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: var(--gk-accent, #f37021);
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+  padding: 0.65rem 0.85rem;
+  margin: 0 -0.85rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+@media (min-width: 576px) {
+  .row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem 2rem;
+  }
+}
+
+.row:hover {
+  background: rgba(243, 112, 33, 0.07);
+}
+
+.rowMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.rowName {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.rowDesc {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.rowPrice {
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  color: var(--gk-accent, #f37021);
+  text-align: right;
+}
+
+@media (min-width: 576px) {
+  .rowPrice {
+    min-width: 7.5rem;
+    padding-top: 0.05rem;
+  }
+}
+
+.subhead {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  text-align: left;
+}
+
+.subhead:first-child {
+  margin-top: 0;
+}
+
+.bodyText {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.58);
+  text-align: left;
+}
+
+.bodyText + .bodyText {
+  margin-top: 0.5rem;
+}
+
+.gap {
+  height: 0.85rem;
+}

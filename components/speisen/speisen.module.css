@@ -1,0 +1,271 @@
+.intro {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introKicker {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  color: #ffd28d;
+}
+
+.introHeadline {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.35;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.introText {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+  text-align: left;
+}
+
+.introText:last-of-type {
+  margin-bottom: 0;
+}
+
+.introActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.navStrip {
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+  color: rgba(255, 210, 141, 0.88);
+  padding: 1rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-top: 1px solid rgba(255, 210, 141, 0.12);
+  border-bottom: 1px solid rgba(255, 210, 141, 0.12);
+}
+
+.introLink {
+  font-size: 0.95rem;
+  color: #ffd28d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.introLink:hover {
+  color: #fff;
+}
+
+.bookBtn {
+  display: inline-block;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #040d10;
+  background: #ffd28d;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.bookBtn:hover {
+  background: #fff;
+  color: #040d10;
+}
+
+.sectionIntro {
+  margin-bottom: 1.75rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: left;
+}
+
+.sectionIntro p {
+  margin: 0 0 0.85rem;
+}
+
+.sectionIntro p:last-child {
+  margin-bottom: 0;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 576px) {
+  .menuItem {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem 2rem;
+  }
+}
+
+.menuItemBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.menuItemTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.menuItemDesc {
+  margin: 0.45rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.62);
+  font-weight: 400;
+}
+
+.menuItemPrice {
+  flex-shrink: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #ffd28d;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .menuItemPrice {
+    width: auto;
+    min-width: 5.5rem;
+    text-align: right;
+    padding-top: 0.1rem;
+  }
+}
+
+.footerProse {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 210, 141, 0.15);
+  text-align: left;
+}
+
+.footerLegal {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.gutschein {
+  margin-top: 3.5rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 210, 141, 0.22);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.gutscheinTitle {
+  margin: 0 0 1rem;
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  color: #ffd28d;
+  line-height: 1.35;
+}
+
+.gutscheinText {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.gutscheinLink {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffd28d;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.gutscheinLink:hover {
+  color: #fff;
+}
+
+.wrap {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 210, 141, 0.2);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #ffd28d;
+  line-height: 1.35;
+}
+
+.sectionSubtitle {
+  margin: 0.65rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.45;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  height: 1px;
+  max-width: 8rem;
+  margin: 2.5rem auto 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 210, 141, 0.35) 20%,
+    rgba(255, 210, 141, 0.35) 80%,
+    transparent
+  );
+}

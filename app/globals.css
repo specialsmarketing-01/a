@@ -1,0 +1,86 @@
+/* Template CSS loaded via layout (see lib/templateCss.ts). */
+
+/* Speisekarte dropdown: click on touch / narrow; hover on fine pointers (template CSS). */
+.ak-nav .ak-nav_list > li.menu-item-has-children.nav-submenu-open > ul {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
+}
+
+.nav-submenu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  padding: 6px 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffd28d;
+  flex-shrink: 0;
+}
+
+.nav-submenu-toggle::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid currentColor;
+  transition: transform 0.2s ease;
+}
+
+.ak-nav .ak-nav_list > li.menu-item-has-children.nav-submenu-open .nav-submenu-toggle::before {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 991px) {
+  .nav-submenu-toggle {
+    display: inline-flex;
+  }
+
+  .ak-nav .ak-nav_list > li.menu-item-has-children {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .ak-nav .ak-nav_list > li.menu-item-has-children > a {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ak-nav .ak-nav_list > li.menu-item-has-children > ul {
+    flex-basis: 100%;
+    position: relative;
+    left: 0;
+    top: 0 !important;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    transition: max-height 0.35s ease, opacity 0.2s ease;
+  }
+
+  .ak-nav .ak-nav_list > li.menu-item-has-children:hover > ul {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  .ak-nav .ak-nav_list > li.menu-item-has-children.nav-submenu-open > ul {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+    border-top: 2px solid #ffd28d;
+  }
+}
+

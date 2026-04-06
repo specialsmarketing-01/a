@@ -1,0 +1,186 @@
+.root {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.heroBlock {
+  margin-bottom: 3.5rem;
+  opacity: 0;
+  animation: genussFadeUp 0.85s ease forwards;
+}
+
+.heroLine {
+  margin: 0;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.35rem, 3.2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+  color: #fff;
+}
+
+.heroLineAccent {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: rgba(255, 210, 141, 0.9);
+}
+
+.heroSub {
+  margin: 1.75rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffd28d;
+}
+
+.heroTag {
+  margin: 0.85rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.titleBlock {
+  margin-bottom: 3.75rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 210, 141, 0.12);
+  opacity: 0;
+  animation: genussFadeUp 0.85s ease 0.08s forwards;
+}
+
+.titleMain {
+  margin: 0;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  line-height: 1.45;
+  text-transform: uppercase;
+  color: #ffd28d;
+}
+
+.titleSub {
+  margin: 0.85rem 0 0;
+  font-size: 0.98rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.titleDate {
+  margin: 1rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.course {
+  margin-bottom: 3.75rem;
+  opacity: 0;
+  animation: genussFadeUp 0.85s ease forwards;
+}
+
+.course:nth-of-type(1) {
+  animation-delay: 0.12s;
+}
+.course:nth-of-type(2) {
+  animation-delay: 0.18s;
+}
+.course:nth-of-type(3) {
+  animation-delay: 0.24s;
+}
+.course:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+
+.courseHeading {
+  margin: 0 0 1.5rem;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.dishTitle {
+  margin: 0 0 0.65rem;
+  font-family: var(--heading-font-family, "Baskervville", Georgia, serif);
+  font-size: clamp(1.1rem, 2.4vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.dishDesc {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.dishBlock {
+  margin-top: 0.25rem;
+}
+
+.dishBlock + .dishBlock {
+  margin-top: 0;
+}
+
+.oder {
+  margin: 1.65rem auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  padding: 0.35rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #040d10;
+  background: linear-gradient(135deg, #ffd28d 0%, #e8a85c 100%);
+  border-radius: 2px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.oderSuffix {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: none;
+  color: rgba(4, 13, 16, 0.85);
+}
+
+@keyframes genussFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroBlock,
+  .titleBlock,
+  .course {
+    animation: none;
+    opacity: 1;
+  }
+}
