@@ -1182,12 +1182,14 @@ function startCountdown() {
   if ($.exists("#foodItems")) {
     const scrollButton = document.getElementById("scroll-btn");
     const foodItems = document.querySelector("#foodItems");
-    scrollButton.addEventListener("click", () => {
-      gsap.to(window, {
-        scrollTo: foodItems,
-        duration: 0.3,
+    if (scrollButton && foodItems) {
+      scrollButton.addEventListener("click", () => {
+        gsap.to(window, {
+          scrollTo: foodItems,
+          duration: 0.3,
+        });
       });
-    });
+    }
   }
 
   /*--------------------------------------------------------------
